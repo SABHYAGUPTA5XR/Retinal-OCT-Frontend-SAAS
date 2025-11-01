@@ -1,5 +1,4 @@
-@tailwind base;
-@tailwind components;
+@import "tailwindcss/preflight";
 @tailwind utilities;
 
 @layer utilities {
@@ -16,12 +15,10 @@
   }
 
   .text-gradient {
-    background: linear-gradient(129deg, #690CB0 0%, #F364A2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @apply bg-gradient-to-r from-[#690cb0] to-[#f364a2] bg-clip-text text-transparent;
   }
 
   .primary-gradient {
-    background: linear-gradient(129deg, #690CB0 0%, #F364A2 100%);
+    @apply bg-gradient-to-r from-[#690cb0] to-[#f364a2];
   }
 }
