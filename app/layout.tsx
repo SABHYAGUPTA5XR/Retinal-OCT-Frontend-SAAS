@@ -1,3 +1,6 @@
+// app/layout.tsx
+import "../app/globals.css"; // <-- add this line at the very top
+import type { ReactNode } from "react";
 import { type Metadata } from 'next'
 import {
   ClerkProvider,

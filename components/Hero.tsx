@@ -8,12 +8,13 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div>
-      <div className="flex flex-row justify-between gap-10">
-        <div>
-          <h1 className="text-4xl font-bold font-mono leading-normal tracking-tight  text-gradient">
+      <div className="flex flex-row justify-between gap-10 p-20">
+        <div className="p-10">
+          
+          <h1 className="text-7xl font-bold font-mono leading-normal tracking-tight  text-gradient">
             {titleText}
           </h1>
-          <p className="mt-6 text-lg font-sans leading-8 text-gray-700">
+          <p className="mt-10 text-2xl font-sans leading-10 text-gray-700">
             {descriptionText}
           </p>
         </div>
@@ -21,8 +22,8 @@ export default function Hero() {
         <Image
           src="/assets/images/doc.png"
           alt="Hero"
-          width={600}
-          height={600}
+          width={800}
+          height={800}
         />
       </div>
       <div className="flex-center mt-20">
@@ -33,5 +34,5 @@ export default function Hero() {
         </Link>
       </div>
     </div>
-  );
+  );
 }

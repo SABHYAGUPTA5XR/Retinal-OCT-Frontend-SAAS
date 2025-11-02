@@ -34,7 +34,7 @@ export const createUser = async ({
       Username: username,
       Email: email,
       Picture: picture,
-      Credits: 2,
+      Credits: 1000,
     }),
   };
 
